@@ -10,7 +10,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0 select-none">
           <img
             alt="Bolivian Landscape"
-            src="/public/images/bg_hero.webp"
+            src="/images/bg_hero.webp"
             className="w-full h-full object-cover opacity-100"
           />
           {/* Capa de sombra/contraste para legibilidad del texto */}
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="bg-[#EFEAE2] rounded-[2.5rem] border border-outline-variant/30 shadow-2xl flex flex-col group overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="/public/images/card1.webp"
+                  src="/images/card1.webp"
                   alt="Amazonía"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -153,7 +153,7 @@ export default function Home() {
             <div className="bg-[#EFEAE2] rounded-[2.5rem] border border-outline-variant/30 shadow-2xl flex flex-col group overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="/public/images/card2.jpg"
+                  src="/images/card2.jpg"
                   alt="Altiplano"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
