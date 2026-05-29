@@ -24,8 +24,12 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl bg-transparent"
           >
-            <div className="flex justify-left items-left gap-6 md:gap-8 mb-8">
-              <img src="/images/icons/ministerio.png" alt="Ministerio" className="h-16 md:h-20 object-contain" />
+            <div className="bg-white p-2 md:p-3 w-fit mb-8 mt-24 md:mt-0 rounded-lg">
+              <img
+                src="/images/icons/ministerio.png"
+                alt="Ministerio de Medio Ambiente y Agua"
+                className="h-20 md:h-24 object-contain"
+              />
             </div>
             <h1 className="font-display text-6xl md:text-7xl font-extrabold text-white mb-8 leading-[1.1] uppercase tracking-tight drop-shadow-2xl">
               ATLAS VIRTUAL DE <span className="text-[#B0946D]">BIOECONOMÍA</span> EN BOLIVIA
@@ -184,12 +188,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bloque Informativo FAO */}
+      {/* Respaldo Institucional */}
       <section className="py-16 md:py-24 bg-surface-container">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-6">Respaldo Institucional</h2>
           <p className="font-sans text-lg md:text-xl text-on-surface-variant leading-relaxed">
-            La Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO) colabora técnicamente en el desarrollo de este Atlas, impulsando la bioeconomía como un motor de desarrollo sostenible, seguridad alimentaria y resiliencia climática en beneficio de las comunidades bolivianas.
+            El Atlas Virtual de Bioeconomía en Bolivia es una iniciativa impulsada por el <span className="font-bold text-primary">Ministerio de Medio Ambiente y Agua</span> con el apoyo técnico de la <span className="font-bold text-primary">Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO)</span>. Esta plataforma consolida la bioeconomía como un motor de desarrollo sostenible, seguridad alimentaria y resiliencia climática en beneficio de las comunidades bolivianas.
           </p>
         </div>
       </section>
@@ -198,17 +202,26 @@ export default function Home() {
       <section className="py-16 bg-surface border-t border-outline-variant/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold text-primary mb-12 text-center">Instituciones y Organizaciones Aliadas</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
-            <img
-              src="/images/icons/ministerio.png"
-              alt="Ministerio"
-              className="h-16 md:h-20 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
-            />
-            <img
-              src="/images/icons/fao.png"
-              alt="FAO"
-              className="h-16 md:h-20 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
-            />
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+            <div className="group transition-all">
+              <img
+                src="/images/icons/ministerio.png"
+                alt="Ministerio de Medio Ambiente y Agua"
+                className="h-20 md:h-24 object-contain"
+              />
+            </div>
+
+            <span className="text-on-surface-variant text-base md:text-lg font-medium italic opacity-80">
+              con el apoyo técnico de:
+            </span>
+
+            <div className="group transition-all">
+              <img
+                src="/images/icons/fao.png"
+                alt="FAO"
+                className="h-20 md:h-24 object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
